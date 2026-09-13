@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CityEye - Reports</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .content-table {
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.9em;
+            min-width: 400px;
+            border-radius: 5px 5px 0 0;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .content-table thead tr {
+            background-color: #030c45;
+            color: #ffffff;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .content-table th,
+        .content-table td {
+            padding: 12px 15px;
+                }
+
+        .content-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .content-table tbody tr:nth-child(even) {
+            background-color:#e4e4e4;
+        }
+
+        .content-table tbody tr:last-of-type {
+            border-bottom: 2px solid #030c45;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <img src="/photo/logo.png"
+                 alt="CityEye Logo">
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="map.html">Map</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="about.html">About the Team</a></li>
+        </ul>
+
+        <ul class="right-links">
+            <li><a href="login.html" class="login-link">Log in</a></li>
+            <li><a href="report.html" class="report-button">Report a problem</a></li>
+        </ul>
+
+    </nav>
+
+
+    <main class="reports-page">
+
+        <div class="reports-title">
+            <h1>Reported Problems</h1>
+            <p>See all reported problems in the city.</p>
+        </div>
+            <table class="content-table">
+
+                <thead>
+                    <tr>
+                        <th>Report ID</th>
+                        <th>Problem Type</th>
+                        <th>Description</th>
+                        <th>Location</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>001</td>
+                        <td>Broken Street Light</td>
+                        <td>Street light is not working.</td>
+                        <td>Abay Avenue</td>
+                        <td>
+                            New
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>002</td>
+                        <td>Pothole</td>
+                        <td>Large pothole on the road.</td>
+                        <td>Saryarka District</td>
+                        <td>
+                            In Progress
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>003</td>
+                        <td>Garbage</td>
+                        <td>Garbage container is full.</td>
+                        <td>Yesil District</td>
+                        <td>
+                            Resolved
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>004</td>
+                        <td>Traffic Light</td>
+                        <td>Traffic light is not working.</td>
+                        <td>Central District</td>
+                        <td>
+                            New
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>005</td>
+                        <td>Water Leak</td>
+                        <td>Water is leaking near the road.</td>
+                        <td>Baykonyr District</td>
+                        <td>
+                            In Progress
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>006</td>
+                        <td>Fallen Tree</td>
+                        <td>A tree is blocking the sidewalk.</td>
+                        <td>Almaty District</td>
+                        <td>
+                           Resolved
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+    </main>
+    <footer>
+        <p>Team members: Arsen Sagidanov, Alisher Balyasnyy</p>
+    </footer>
+</body>
+</html>

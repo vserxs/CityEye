@@ -1,0 +1,456 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---- Navbar ---- */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(253, 49%, 11%);
+    color: rgb(248, 255, 247);
+    padding: 15px 30px;
+    font-family: "Saira", sans-serif;
+}
+
+.nav-links,
+.right-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a,
+.right-links a {
+    color: rgb(254, 255, 255);
+    text-decoration: none;
+}
+
+.nav-links a:hover,
+.right-links a:hover {
+    color: rgb(253, 255, 253);
+    text-decoration: underline;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 70px;
+    width: 70px;
+    object-fit: contain;
+}
+
+
+/* ---- Main ---- */
+
+main {
+    flex: 1;
+}
+
+
+/* ---- Map ---- */
+
+.map-page {
+    background-color: #f5f7fb;
+    min-height: calc(100vh - 70px);
+    padding: 40px 50px;
+}
+
+.map-title {
+    max-width: 1400px;
+    margin: 0 auto 25px;
+}
+
+.map-title h1 {
+    margin: 0;
+    font-size: 34px;
+    color: #172033;
+}
+
+.map-title p {
+    margin-top: 8px;
+    color: #697386;
+    font-size: 16px;
+}
+
+.map {
+    position: relative;
+    max-width: 1400px;
+    height: 650px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: #ddd;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.marker {
+    position: absolute;
+    font-size: 32px;
+    transform: translate(-50%, -50%);
+}
+
+.marker-red {
+    color: #ef4444;
+}
+
+.marker-yellow {
+    color: #f59e0b;
+}
+
+.marker-green {
+    color: #22c55e;
+}
+
+.marker-1 {
+    top: 25%;
+    left: 35%;
+}
+
+.marker-2 {
+    top: 35%;
+    left: 60%;
+}
+
+.marker-3 {
+    top: 55%;
+    left: 30%;
+}
+
+.marker-4 {
+    top: 70%;
+    left: 55%;
+}
+
+.marker-5 {
+    top: 45%;
+    left: 78%;
+}
+
+
+/* ---- Map Legend ---- */
+
+.legend {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    gap: 20px;
+    padding: 13px 18px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.legend span {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 14px;
+    color: #343b4d;
+    white-space: nowrap;
+}
+
+.legend i {
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.red-dot {
+    background-color: #ef4444;
+}
+
+.yellow-dot {
+    background-color: #f59e0b;
+}
+
+.green-dot {
+    background-color: #22c55e;
+}
+
+
+/* ---- Buttons ---- */
+
+.report-button {
+    padding: 12px 20px;
+    background-color: #2878e8;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.report-button:hover {
+    background-color: #1a5bb8;
+}
+
+
+/* ---- Register Form ---- */
+
+.register-form {
+    max-width: 210px;
+    margin: 57px auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(36, 10, 52, 0.1);
+    font-family: sans-serif;
+}
+
+.register-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.register-form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2px;
+}
+
+
+/* ---- Login Form ---- */
+
+.login-form {
+    max-width: 200px;
+    margin: 57px auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(156, 98, 193, 0.1);
+    font-family: sans-serif;
+}
+
+.login-form p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+
+/* ---- Home ---- */
+
+.welcome {
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: "Saira", sans-serif;
+}
+
+.city {
+    color: blue;
+}
+
+.eye {
+    color: green;
+}
+
+.problem-images {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 50px auto;
+}
+
+.problem-image {
+    text-align: center;
+}
+
+.problem-image img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.problem-image h3 {
+    margin-top: 15px;
+    color: #172033;
+}
+
+
+/* ---- Report Form ---- */
+
+.report-form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(36, 10, 52, 0.1);
+    font-family: sans-serif;
+}
+
+.report-form h1 {
+    text-align: center;
+}
+
+
+/* ---- Reports Page ---- */
+
+.reports-page {
+    background-color: #f5f7fb;
+    min-height: calc(100vh - 70px);
+    padding: 40px 50px;
+}
+
+.reports-title {
+    max-width: 1200px;
+    margin: 0 auto 30px;
+}
+
+.reports-title h1 {
+    margin: 0;
+    font-size: 34px;
+    color: #172033;
+}
+
+.reports-title p {
+    margin-top: 8px;
+    color: #697386;
+    font-size: 16px;
+}
+
+/* ---- Form Style ---- */
+
+input,
+select,
+textarea {
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+/* ---- Reports Table ---- */
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px auto;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+    background-color: #030c45;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-child(even) {
+    background-color: #e4e4e4;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #030c45;
+}
+
+
+/* ---- About Team ---- */
+
+.team-content {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 50px;
+max-width: 1000px;
+margin: 40px auto;
+}
+.photo-box {
+margin: 0;
+width: 450px;
+}
+.team-img {
+width: 100%;
+height: auto;
+border-radius: 12px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.team-info {
+width: 350px;
+padding: 30px;
+background-color: white;
+border-radius: 15px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+text-align: center;
+}
+.team-info h2 {
+color: #17132f;
+margin-top: 0;
+}
+.team-info p {
+color: #666;
+}
+.team-card {
+margin-top: 25px;
+padding: 20px;
+background-color: #f5f5f5;
+border-radius: 12px;
+}
+.team-card h3 {
+margin: 0 0 8px;
+}
+.team-card span {
+color: #2878d4;
+font-weight: bold;
+}
+
+
+
+
+/* ---- Footer ---- */
+
+footer {
+    background-color: #17132f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}   
+
+#main-title {
+    color: #172033;
+    text-align: center;
+}
+
