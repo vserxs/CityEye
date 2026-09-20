@@ -16,6 +16,8 @@
             border-radius: 5px 5px 0 0;
             overflow: hidden;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+            width: 100%;
+            max-width: 1200px;
         }
 
         .content-table thead tr {
@@ -35,18 +37,41 @@
         }
 
         .content-table tbody tr:nth-child(even) {
-            background-color:#e4e4e4;
+            background-color:#a19dfa90;
         }
 
         .content-table tbody tr:last-of-type {
             border-bottom: 2px solid #030c45;
         }
 
+        .status-new {
+           color: #ef4444;
+           font-weight: bold;
+        }
+
+        .status-progress {
+           color: #f59e0b;
+           font-weight: bold;
+        }
+
+        .status-resolved {
+           color: #22c55e;
+           font-weight: bold;
+        }
+
     </style>
 </head>
 
-<body>
-
+<body class="grid-page">
+    <aside class="sidebar">
+        <h3>Filter by Status</h3>
+        <ul>
+            <li><a href="#" class="allr">All Reports</a></li>
+            <li><a href="#" class="newr">New</a></li>
+            <li><a href="#" class="inpr">In Progress</a></li>
+            <li><a href="#" class="rsl">Resolved</a></li>
+        </ul>
+    </aside>
     <nav class="navbar">
 
         <div class="logo">
@@ -55,7 +80,7 @@
         </div>
 
         <ul class="nav-links">
-            <li><a href="home.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="map.html">Map</a></li>
             <li><a href="reports.html">Reports</a></li>
             <li><a href="about.html">About the Team</a></li>
@@ -94,9 +119,7 @@
                         <td>Broken Street Light</td>
                         <td>Street light is not working.</td>
                         <td>Abay Avenue</td>
-                        <td>
-                            New
-                        </td>
+                        <td class="status-new">New</td>
                     </tr>
 
                     <tr>
@@ -104,9 +127,7 @@
                         <td>Pothole</td>
                         <td>Large pothole on the road.</td>
                         <td>Saryarka District</td>
-                        <td>
-                            In Progress
-                        </td>
+                        <td class="status-progress">In Progress</td>
                     </tr>
 
                     <tr>
@@ -114,9 +135,7 @@
                         <td>Garbage</td>
                         <td>Garbage container is full.</td>
                         <td>Yesil District</td>
-                        <td>
-                            Resolved
-                        </td>
+                        <td class="status-resolved">Resolved</td>
                     </tr>
 
                     <tr>
@@ -124,9 +143,7 @@
                         <td>Traffic Light</td>
                         <td>Traffic light is not working.</td>
                         <td>Central District</td>
-                        <td>
-                            New
-                        </td>
+                        <td class="status-new">New</td>
                     </tr>
 
                     <tr>
@@ -134,9 +151,7 @@
                         <td>Water Leak</td>
                         <td>Water is leaking near the road.</td>
                         <td>Baykonyr District</td>
-                        <td>
-                            In Progress
-                        </td>
+                        <td class="status-progress">In Progress</td>
                     </tr>
 
                     <tr>
@@ -144,9 +159,7 @@
                         <td>Fallen Tree</td>
                         <td>A tree is blocking the sidewalk.</td>
                         <td>Almaty District</td>
-                        <td>
-                           Resolved
-                        </td>
+                        <td class="status-resolved">Resolved</td>
                     </tr>
 
                 </tbody>
